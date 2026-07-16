@@ -1,0 +1,5 @@
+path: /Users/mayankkashyap/Downloads/Recruitment_Data Science Assignment/belt_damage_detection/dataset_v2
+train: images/train
+val: images/val
+nc: 2
+names: ["scratch", "edge_damage"]
