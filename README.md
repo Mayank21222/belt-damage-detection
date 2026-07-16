@@ -163,7 +163,3 @@ python train.py
 - [ ] Add defect severity classification
 
 ---
-
-**Author**: Mayank Kashyap  
-**LinkedIn**: [Your LinkedIn]  
-**Date**: July 2026
