@@ -171,9 +171,9 @@ def run_pipeline(image_dir, output_dir, model_path=None, conf_threshold=0.3, use
     )
     print(f"Processing {len(image_files)} images from {image_dir}" + (" (TTA)" if tta else ""))
 
-    labels_dir_default = os.path.join(
-        Path(__file__).resolve().parent, "..", "train", "train", "labels"
-    )
+        labels_dir_default = os.path.join(
+            Path(__file__).resolve().parent, "training_data", "labels"
+        )
 
     total_detections = 0
     images_with_detections = 0

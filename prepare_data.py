@@ -295,8 +295,8 @@ def main():
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parent
-    si = os.path.abspath(args.src_images or str(root / ".." / "train" / "train" / "images"))
-    sl = os.path.abspath(args.src_labels or str(root / ".." / "train" / "train" / "labels"))
+    si = os.path.abspath(args.src_images or str(root / "training_data" / "images"))
+    sl = os.path.abspath(args.src_labels or str(root / "training_data" / "labels"))
     od = os.path.abspath(args.output_dir or str(root / "dataset_v2"))
     print(f"Images: {si}\nLabels: {sl}\nOutput: {od}")
     process_dataset(si, sl, od, args.val_ratio, args.seed)

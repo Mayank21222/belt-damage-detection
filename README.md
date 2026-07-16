@@ -19,7 +19,8 @@ belt_damage_detection/
 ├── data.yaml            # YOLO dataset config
 ├── model_weights/       # Best trained weights
 ├── outputs/             # Inference results (annotated images + JSONs)
-└── dataset_v2/          # Prepared dataset (images + labels)
+├── dataset_v2/          # Prepared dataset (images + labels)
+└── training_data/       # Raw training data (images + polygon labels)
 ```
 
 ## Reproducing Training
@@ -41,7 +42,7 @@ python evaluate.py \
 ## Inference
 
 ```bash
-python pipeline.py --image_dir <path_to_images> --output_dir <output_folder>
+python pipeline.py --image_dir training_data/images --output_dir outputs
 ```
 
 Options:
